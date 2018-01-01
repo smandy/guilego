@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -7,16 +7,16 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 
 @SuppressWarnings("serial")
-public class PraxisBooleanRedGreenRenderer extends PraxisDefaultTableCellRenderer<Boolean>
+public class ArgoBooleanRedGreenRenderer extends ArgoDefaultTableCellRenderer<Boolean>
 {
     final boolean greenValue;
 
-    public PraxisBooleanRedGreenRenderer(String name, Boolean def) {
+    public ArgoBooleanRedGreenRenderer(String name, Boolean def) {
         super(name, def);
         greenValue = true;
     }
 
-    public PraxisBooleanRedGreenRenderer(String name, Boolean def, boolean gv) {
+    public ArgoBooleanRedGreenRenderer(String name, Boolean def, boolean gv) {
         super(name, def);
         greenValue = gv;
     }

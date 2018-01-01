@@ -1,11 +1,11 @@
-package praxis.guilego
+package argo.guilego
 
 import javax.swing.{JTable, JLabel}
 import java.util.{Map => JMap}
 
 import scala.collection.JavaConversions._
 
-class MapExtractorRenderer(var field: String) extends PraxisDefaultTableCellRenderer[JMap[String, String]]("map entry " + field, Map[String,String]()) {
+class MapExtractorRenderer(var field: String) extends ArgoDefaultTableCellRenderer[JMap[String, String]]("map entry " + field, Map[String,String]()) {
   override def getTableCellRendererComponent(table: JTable, value: Any, isSelected: Boolean, hasFocus: Boolean, row: Int, column: Int) = {
     val ret = super.getTableCellRendererComponent(table, value,
                                                   isSelected, hasFocus, row, column).asInstanceOf[JLabel]

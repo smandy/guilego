@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package praxis.guilego;
+package argo.guilego;
 
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
@@ -15,7 +15,7 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import praxis.commandControl.ICommandControl;
+import argo.commandControl.ICommandControl;
 
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;

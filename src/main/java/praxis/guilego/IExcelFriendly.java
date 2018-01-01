@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 public interface IExcelFriendly {
 

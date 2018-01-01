@@ -9,7 +9,7 @@
  * Created on 28-Aug-2009, 08:29:57
  */
 
-package praxis.guilego;
+package argo.guilego;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;

@@ -1,4 +1,4 @@
-package praxis.commandControl
+package argo.commandControl
 
 import java.awt.Color
 import java.text.DecimalFormat
@@ -6,9 +6,9 @@ import javax.json.{JsonArray, JsonObject}
 import javax.swing.{JLabel, SwingConstants}
 
 import org.apache.commons.logging.LogFactory
-import praxis.HasJsonObject
-import praxis.PraxisJsonUtil.jsonFromStream
-import praxis.guilego._
+import argo.HasJsonObject
+import argo.ArgoJsonUtil.jsonFromStream
+import argo.guilego._
 
 import scala.reflect.ClassTag
 import scala.util.Try

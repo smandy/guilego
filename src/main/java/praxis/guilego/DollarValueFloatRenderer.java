@@ -1,11 +1,11 @@
-package praxis.guilego;
+package argo.guilego;
 
 import javax.swing.*;
 import java.awt.*;
 import java.text.DecimalFormat;
 
 public class DollarValueFloatRenderer extends
-		PraxisDefaultTableCellRenderer<Float> {
+		ArgoDefaultTableCellRenderer<Float> {
 
 	private final DecimalFormat format = new DecimalFormat("\u0024###,###;(\u0024###,###)");
 

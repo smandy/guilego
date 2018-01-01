@@ -8,9 +8,9 @@
  *
  * Created on 11-Nov-2013, 13:54:11
  */
-package praxis.guilego;
+package argo.guilego;
 
-//import praxis.wavestream.ChallengeResponseListener;
+//import argo.wavestream.ChallengeResponseListener;
 
 /**
  *

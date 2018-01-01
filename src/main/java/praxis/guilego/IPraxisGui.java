@@ -1,7 +1,7 @@
-package praxis.guilego;
+package argo.guilego;
 
 
-public interface IPraxisGui {
+public interface IArgoGui {
     void cancelWaveClicked();
 
     void selectAll();

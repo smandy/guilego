@@ -1,4 +1,4 @@
-package praxis.guilego
+package argo.guilego
 
 // To aid with finder.
 trait HasGlobalId extends Comparable[HasGlobalId] {

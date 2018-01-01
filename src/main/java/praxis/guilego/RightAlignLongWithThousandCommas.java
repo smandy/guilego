@@ -1,11 +1,11 @@
-package praxis.guilego;
+package argo.guilego;
 
 import javax.swing.*;
 import java.awt.*;
 import java.text.DecimalFormat;
 
 public class RightAlignLongWithThousandCommas extends
-		PraxisDefaultTableCellRenderer<Long> {
+		ArgoDefaultTableCellRenderer<Long> {
 
 	private final DecimalFormat format = new DecimalFormat("###,##0");
 

@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 
 @SuppressWarnings("serial")
-public class IsRestrictedRedWhiteRenderer extends PraxisDefaultTableCellRenderer<Boolean>
+public class IsRestrictedRedWhiteRenderer extends ArgoDefaultTableCellRenderer<Boolean>
 {
     IsRestrictedRedWhiteRenderer(String name, Boolean def) {
         super(name, def);

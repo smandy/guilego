@@ -1,4 +1,4 @@
-package praxis.guilego
+package argo.guilego
 
 import ca.odell.glazedlists.{BasicEventList, EventList}
 

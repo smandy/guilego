@@ -1,6 +1,6 @@
-package praxis.guilego;
+package argo.guilego;
 
-public class StringRenderer extends PraxisDefaultTableCellRenderer<String> {
+public class StringRenderer extends ArgoDefaultTableCellRenderer<String> {
     @Override
     public String getText(String s) {
         return s;

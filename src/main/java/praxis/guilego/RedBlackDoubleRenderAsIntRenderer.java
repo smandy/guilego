@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 
 @SuppressWarnings("serial")
 public class RedBlackDoubleRenderAsIntRenderer extends
-		PraxisDefaultTableCellRenderer<Double> {
+		ArgoDefaultTableCellRenderer<Double> {
 
 	private final DecimalFormat format = new DecimalFormat("###,##0;(###,##0)");
 

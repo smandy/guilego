@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -8,7 +8,7 @@ import javax.swing.JTable;
 import javax.swing.SwingConstants;
 
 public class DollarValueDoubleRenderer extends
-		PraxisDefaultTableCellRenderer<Double> {
+		ArgoDefaultTableCellRenderer<Double> {
 
 	//private final DecimalFormat format = new DecimalFormat("\u0024###,###;(\0024###,###)");
     private final DecimalFormat format = new DecimalFormat("\u0024###,###;(\u0024###,###)");

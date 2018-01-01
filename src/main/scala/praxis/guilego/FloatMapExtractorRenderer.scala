@@ -1,12 +1,12 @@
-package praxis.algo.guiLego
+package argo.algo.guiLego
 
 import javax.swing.{JLabel, JTable}
 
 import java.util.{Map => JMap, HashMap => JHashMap}
-import praxis.guilego.PraxisDefaultTableCellRenderer
+import argo.guilego.ArgoDefaultTableCellRenderer
 
 
-class FloatMapExtractorRenderer(var field: String) extends PraxisDefaultTableCellRenderer[JMap[String, Float]]( "map entry " + field, new JHashMap[String,Float]()) {
+class FloatMapExtractorRenderer(var field: String) extends ArgoDefaultTableCellRenderer[JMap[String, Float]]( "map entry " + field, new JHashMap[String,Float]()) {
   override def getTableCellRendererComponent(table: JTable, value: Any, isSelected: Boolean, hasFocus: Boolean, row: Int, column: Int) = {
     val ret = super.getTableCellRendererComponent(table, value,
                                                   isSelected, hasFocus, row, column).asInstanceOf[JLabel]

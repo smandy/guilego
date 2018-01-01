@@ -1,4 +1,4 @@
-package praxis.guilego
+package argo.guilego
 
 import java.util.{Map => JMap}
 import javax.swing.{JLabel, JTable}
@@ -6,7 +6,7 @@ import java.awt.Color
 
 import scala.collection.JavaConversions._
 
-class RedGreenBooleanMapExtractorRenderer(var field: String) extends PraxisDefaultTableCellRenderer[JMap[String, String]]("field=%s".format(field), Map[String,String]()) {
+class RedGreenBooleanMapExtractorRenderer(var field: String) extends ArgoDefaultTableCellRenderer[JMap[String, String]]("field=%s".format(field), Map[String,String]()) {
   override def getTableCellRendererComponent(table: JTable, value: Any, isSelected: Boolean, hasFocus: Boolean, row: Int, column: Int) = {
     val ret = super.getTableCellRendererComponent(table, value,
                                                   isSelected, hasFocus, row, column).asInstanceOf[JLabel]

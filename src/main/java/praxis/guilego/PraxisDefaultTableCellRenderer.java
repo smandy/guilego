@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -22,23 +22,23 @@ import javax.swing.table.DefaultTableCellRenderer;
  * 
  * 
  */
-public abstract class PraxisDefaultTableCellRenderer<T> extends
+public abstract class ArgoDefaultTableCellRenderer<T> extends
 		DefaultTableCellRenderer {
 
     private final String name;
     private final T def;
 
-    protected PraxisDefaultTableCellRenderer(String name, T def) {
+    protected ArgoDefaultTableCellRenderer(String name, T def) {
         this.name = name;
         this.def = def;
     }
 
-    protected PraxisDefaultTableCellRenderer() {
+    protected ArgoDefaultTableCellRenderer() {
         this.name = "";
         this.def = null;
     }
 
-    private static final Log log = LogFactory.getLog(PraxisDefaultTableCellRenderer.class.getName());
+    private static final Log log = LogFactory.getLog(ArgoDefaultTableCellRenderer.class.getName());
 
     boolean errorFlagged = false;
 

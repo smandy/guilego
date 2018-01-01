@@ -1,9 +1,9 @@
-package praxis.guilego
+package argo.guilego
 
 import java.util.concurrent.atomic.AtomicReference
 import javax.swing.SwingUtilities
 
-object PraxisSwingUtil {
+object ArgoSwingUtil {
   def invokeLaterAndWaitForResult[T]( f : => T ) : T = {
     val ref = new AtomicReference[T]()
     SwingUtilities.invokeAndWait( new Runnable() {

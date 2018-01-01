@@ -1,6 +1,6 @@
-package praxis.commandControl;
+package argo.commandControl;
 
-import praxis.guilego.CommandControlButtonFrame;
+import argo.guilego.CommandControlButtonFrame;
 
 public interface ICommandControl {
     public void securitySelectionChanged();

@@ -1,6 +1,6 @@
-package praxis.guilego
+package argo.guilego
 
-import praxis.HasJsonObject
+import argo.HasJsonObject
 import scala.beans.BeanProperty
 import javax.json.JsonObject
 

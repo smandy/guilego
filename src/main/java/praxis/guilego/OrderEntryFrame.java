@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package praxis.guilego;
+package argo.guilego;
 import java.awt.event.KeyEvent;
-import praxis.OrderEntryListener;
+import argo.OrderEntryListener;
 import javax.swing.*;
 
 /**

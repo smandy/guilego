@@ -1,11 +1,11 @@
-package praxis.guilego;
+package argo.guilego;
 
 import javax.swing.*;
 import java.awt.*;
 import java.text.DecimalFormat;
 
 public class DoubleRenderAsInt extends
-		PraxisDefaultTableCellRenderer<Double> {
+		ArgoDefaultTableCellRenderer<Double> {
 
 	private final DecimalFormat format = new DecimalFormat("###,##0");
 

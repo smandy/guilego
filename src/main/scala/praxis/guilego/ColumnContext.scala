@@ -1,4 +1,4 @@
-package praxis.guilego
+package argo.guilego
 
 /* A little wormhole that we can use to serve as a placeholder for columns which can mutate from under us
 *

@@ -1,9 +1,9 @@
-package praxis.guilego;
+package argo.guilego;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class CenterTextRenderer extends PraxisDefaultTableCellRenderer<String> {
+public class CenterTextRenderer extends ArgoDefaultTableCellRenderer<String> {
 
 
     @Override

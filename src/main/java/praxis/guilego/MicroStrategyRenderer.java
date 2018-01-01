@@ -1,11 +1,11 @@
-package praxis.guilego;
+package argo.guilego;
 
-import praxis.guilego.PraxisDefaultTableCellRenderer;
+import argo.guilego.ArgoDefaultTableCellRenderer;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class MicroStrategyRenderer extends PraxisDefaultTableCellRenderer<String> {
+public class MicroStrategyRenderer extends ArgoDefaultTableCellRenderer<String> {
     static final Color EU01_COLOUR = new Color( 255, 120,120 );
     static final Color EU02_COLOUR = new Color( 120, 255, 120);
     static final Color EU03_COLOUR = new Color( 120, 120, 255);

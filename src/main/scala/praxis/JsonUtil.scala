@@ -1,4 +1,4 @@
-package praxis
+package argo
 
 import java.io.{FileInputStream, InputStream}
 import javax.json.{Json, JsonObject}
@@ -9,7 +9,7 @@ trait HasJsonObject {
   def json : JsonObject
 }
 
-object PraxisJsonUtil {
+object ArgoJsonUtil {
 
   def jsonFromFile( fn : String) = jsonFromStream(new FileInputStream(fn))
 

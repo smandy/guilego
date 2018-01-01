@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -10,7 +10,7 @@ import javax.swing.SwingConstants;
 
 @SuppressWarnings("serial")
 public class RedBlackFloatRenderAsIntRenderer extends
-		PraxisDefaultTableCellRenderer<Float> {
+		ArgoDefaultTableCellRenderer<Float> {
 
 	private final DecimalFormat format = new DecimalFormat("###,##0;(###,##0)");
 

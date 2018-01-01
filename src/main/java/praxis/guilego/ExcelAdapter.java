@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import javax.swing.*;
 import javax.swing.table.TableCellRenderer;
@@ -107,9 +107,9 @@ public class ExcelAdapter implements ActionListener {
 						j);
 					
 					TableCellRenderer renderer = y.getCellRenderer();
-					if ( renderer!= null && PraxisDefaultTableCellRenderer.class.isAssignableFrom(renderer.getClass() ) )
+					if ( renderer!= null && ArgoDefaultTableCellRenderer.class.isAssignableFrom(renderer.getClass() ) )
 					{
-						sbf.append( ( ( PraxisDefaultTableCellRenderer) renderer ).getText(theValue) );
+						sbf.append( ( ( ArgoDefaultTableCellRenderer) renderer ).getText(theValue) );
 					}
 					else if ( IExcelFriendly.class.isAssignableFrom( theValue.getClass() ) )
 					{

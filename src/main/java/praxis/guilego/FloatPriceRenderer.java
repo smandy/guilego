@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import java.awt.Component;
 import java.text.DecimalFormat;
@@ -8,7 +8,7 @@ import javax.swing.JTable;
 import javax.swing.SwingConstants;
 
 public class FloatPriceRenderer extends
-		PraxisDefaultTableCellRenderer<Float> {
+		ArgoDefaultTableCellRenderer<Float> {
 
 	private final DecimalFormat format = new DecimalFormat("###,##0.0000");
 

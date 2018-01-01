@@ -1,4 +1,4 @@
-package praxis.guilego
+package argo.guilego
 
 import javax.swing.table.TableCellRenderer
 import javax.swing.{JTable, JLabel}
@@ -6,7 +6,7 @@ import _root_.ca.odell.glazedlists.{GlazedLists, EventList}
 import _root_.ca.odell.glazedlists.gui.TableFormat
 import _root_.ca.odell.glazedlists.swing.EventTableModel
 import org.apache.commons.logging.{Log, LogFactory}
-import praxis.HasJsonObject
+import argo.HasJsonObject
 
 
 // Parameterise on beanttype

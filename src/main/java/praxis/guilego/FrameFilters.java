@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -11,11 +11,11 @@ import javax.swing.JRadioButton;
 public class FrameFilters extends javax.swing.JFrame {
 
     // private final WaveStreamGui gui;
-    private final IPraxisGui coordinator;
+    private final IArgoGui coordinator;
     private boolean transmitting = true;
 
     /** Creates new form FrameFilters */
-    public FrameFilters(IPraxisGui gui) {
+    public FrameFilters(IArgoGui gui) {
         this.coordinator = gui;
         initComponents();
         cmdDismissFilter.requestFocusInWindow();
@@ -685,7 +685,7 @@ public class FrameFilters extends javax.swing.JFrame {
     // }
     // for (String s : fb.getStates()) {
     // if (!buttonFor.containsKey(s)) {
-    // throw new PraxisRunTimeException("Can't map state " + s
+    // throw new ArgoRunTimeException("Can't map state " + s
     // + " all I have is "
     // + StringUtils.join(buttonFor.keySet(), ", "));
     // }
@@ -832,7 +832,7 @@ public class FrameFilters extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void sendTxRxInfo() {
-       // if ( rbTX.isSelected() != rbRX.isSelected()) throw new PraxisRunTimeException("Logic error, radio buttons should have mutual exclusivity");
+       // if ( rbTX.isSelected() != rbRX.isSelected()) throw new ArgoRunTimeException("Logic error, radio buttons should have mutual exclusivity");
        // boolean isSending = rbTX.isSelected();
         coordinator.setInterlinkSending(transmitting);
     }

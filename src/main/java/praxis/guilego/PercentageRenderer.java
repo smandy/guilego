@@ -1,4 +1,4 @@
-package praxis.guilego;
+package argo.guilego;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JTable;
 
 @SuppressWarnings("serial")
-public class PercentageRenderer extends PraxisDefaultTableCellRenderer<Integer> {
+public class PercentageRenderer extends ArgoDefaultTableCellRenderer<Integer> {
 
 
     public PercentageRenderer(String name, Integer def) {

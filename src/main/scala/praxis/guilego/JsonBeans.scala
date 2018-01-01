@@ -1,4 +1,4 @@
-package praxis.guilego
+package argo.guilego
 
 import java.awt.{Color, Component, Graphics}
 import javax.json.JsonObject
@@ -20,7 +20,7 @@ object RenderLego {
 }
 
 class JsonStringRenderer(sci: ScalaColumnInfo,
-                         render: (JLabel, String) => Unit = RenderLego.defaultStringRender) extends PraxisDefaultTableCellRenderer[String] {
+                         render: (JLabel, String) => Unit = RenderLego.defaultStringRender) extends ArgoDefaultTableCellRenderer[String] {
   override def getTableCellRendererComponent(table: JTable, value: scala.Any, isSelected: Boolean, hasFocus: Boolean, row: Int, column: Int): Component = {
     val ret = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column).asInstanceOf[JLabel]
     val s = getValue(value)
@@ -44,7 +44,7 @@ class MaybeAlignRenderer(sci: ScalaColumnInfo) extends DefaultTableCellRenderer 
 
 class JsonBooleanRenderer(sci: ScalaColumnInfo,
                           render: (JLabel, Boolean, Boolean) => Unit = RenderLego.defaultBoolRender) extends
-PraxisDefaultTableCellRenderer[Boolean] {
+ArgoDefaultTableCellRenderer[Boolean] {
   override def getTableCellRendererComponent(table: JTable, value: scala.Any, isSelected: Boolean, hasFocus: Boolean, row: Int, column: Int): Component = {
     val ret = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column).asInstanceOf[JLabel]
     val s = getValue(value)
@@ -60,7 +60,7 @@ PraxisDefaultTableCellRenderer[Boolean] {
 
 class JsonIntRenderer(sci: ScalaColumnInfo,
                       render: (JLabel, Boolean, Int) => Unit = RenderLego.defaultIntRender) extends
-PraxisDefaultTableCellRenderer[Int] {
+ArgoDefaultTableCellRenderer[Int] {
   override def getTableCellRendererComponent(table: JTable, value: scala.Any, isSelected: Boolean, hasFocus: Boolean, row: Int, column: Int): Component = {
     val ret = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column).asInstanceOf[JLabel]
     val s = getValue(value)
@@ -78,7 +78,7 @@ object BidAskRenderer {
   val log = LogFactory.getLog(BidAskRenderer.getClass.getName)
 }
 
-class BidAskRenderer(sci: ScalaColumnInfo, obj: JsonObject) extends PraxisDefaultTableCellRenderer[JsonObject] {
+class BidAskRenderer(sci: ScalaColumnInfo, obj: JsonObject) extends ArgoDefaultTableCellRenderer[JsonObject] {
 
   def safeGet(s: String) = try {
     obj.getString(s)
@@ -166,7 +166,7 @@ class BidAskRenderer(sci: ScalaColumnInfo, obj: JsonObject) extends PraxisDefaul
 
 class JsonDoubleRenderer(sci: ScalaColumnInfo,
                          render: (JLabel, Boolean, Double) => Unit = RenderLego.defaultDoubleRender) extends
-PraxisDefaultTableCellRenderer[Double] {
+ArgoDefaultTableCellRenderer[Double] {
   override def getTableCellRendererComponent(table: JTable, value: scala.Any,
                                              isSelected: Boolean, hasFocus: Boolean,
                                              row: Int, column: Int): Component = {

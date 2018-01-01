@@ -1,11 +1,11 @@
-package praxis.commandControl
+package argo.commandControl
 
 import java.awt.{Color, Component}
 import javax.json.JsonObject
 import javax.swing.{JLabel, JTable}
 
 import org.apache.commons.logging.LogFactory
-import praxis.guilego.{ScalaColumnInfo, PraxisDefaultTableCellRenderer}
+import argo.guilego.{ScalaColumnInfo, ArgoDefaultTableCellRenderer}
 
 import scala.annotation.tailrec
 
@@ -14,7 +14,7 @@ object MultiChoiceRenderer {
   val log = LogFactory.getLog( MultiChoiceRenderer.getClass.getName)
 }
 
-case class MultiChoiceRenderer(sci : ScalaColumnInfo, json : JsonObject) extends PraxisDefaultTableCellRenderer[AnyRef] {
+case class MultiChoiceRenderer(sci : ScalaColumnInfo, json : JsonObject) extends ArgoDefaultTableCellRenderer[AnyRef] {
   import MultiChoiceRenderer._
 
   type ChoiceType = (String,Option[Color],Option[Color])

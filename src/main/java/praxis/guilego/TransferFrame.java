@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package praxis.guilego;
+package argo.guilego;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
